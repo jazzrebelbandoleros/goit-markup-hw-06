@@ -65,18 +65,6 @@ body {
   }
 }
 
-/* .section {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
-
-@media screen and (min-width: 1158px) {
-  .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  } */
-/* } */
-
 /* ========================================================================================================================================================
   HEADER STYLES
   ======================================================================================================================================================== */
@@ -614,10 +602,7 @@ BENEFITS
 .social-title {
   display: flex;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: #4d5ae5;
-  border-radius: 50%;
+  gap: 24px;
 }
 .svg {
   fill: #f4f4fd;
