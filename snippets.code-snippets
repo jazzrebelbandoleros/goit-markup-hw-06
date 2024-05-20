@@ -1,0 +1,93 @@
+{
+	"svg": {
+		"scope": "html",
+		"prefix": "svg",
+		"body": [
+		"<svg class=\"$2\" width=\"$3\" height=\"$4\">",
+		"  <use href=\"$1\"></use>",
+		"</svg>"
+		],
+		"description": "media min"
+	  },
+	
+	  "media min": {
+		"scope": "css",
+		"prefix": "mqmin",
+		"body": ["@media screen and (min-width: $1px) {", "$2", "}"],
+		"description": "media min"
+	  },
+	
+	  "media max": {
+		"scope": "css",
+		"prefix": "mqmax",
+		"body": ["@media screen and (max-width: $1px) {", "$2", "}"],
+		"description": "media max"
+	  },
+	
+	  "media min-max": {
+		"scope": "css",
+		"prefix": "mqmin-max",
+		"body": [
+		  "@media screen and (min-width: $1px) and (max-width: $2px) {",
+		  "$3",
+		  "}"
+		],
+		"description": "media min-max"
+	  },
+	
+	  "retina bg": {
+		"scope": "css",
+		"prefix": "mqretina",
+		"body": [
+		  "@media screen and (min-device-pixel-ratio: 2),",
+		  "  screen and (min-resolution: 192dpi),",
+		  "  screen and (min-resolution: 2dppx) {",
+		  "    $1",
+		  "}"
+		],
+		"description": "media retina"
+	  },
+	
+	  "visually-hidden": {
+		"scope": "css",
+		"prefix": "vshidden",
+		"body": [
+		  ".visually-hidden {",
+		  "  position: absolute;",
+		  "  white-space: nowrap;",
+		  "  width: 1px;",
+		  "  height: 1px;",
+		  "  overflow: hidden;",
+		  "  border: 0;",
+		  "  padding: 0;",
+		  "  clip: rect(0 0 0 0);",
+		  "  clip-path: inset(50%);",
+		  "  margin: -1px;",
+		  "}"
+		],
+		"description": "visually-hidden"
+	  },
+	
+	  "sp": {
+		"prefix": "sp-big",
+		"body": [
+		  "/* ========================================================================================================================================================",
+		  "$1",
+		  "======================================================================================================================================================== */\n\n$2"
+		],
+		"description": "Разделитель"
+	  },
+	  "picture": {
+		"scope": "html",
+		"prefix": "pic",
+		"body": [
+		  "<picture>",
+		  "  <source srcset=\"$1 1x,$1 2x\" media=\"(min-width: ${2:1158}px)\" />",
+		  "  <source srcset=\"$3 1x,$3 2x\" media=\"(min-width: ${4:768}px)\" />",
+		  "  <source srcset=\"$5 1x,$5 2x\" media=\"(max-width: ${6:767}px)\" />",
+		  "  <img src=\"$1\" width=\"$7\" height=\"$8\" alt=\"$9\" />",
+		  "</picture>"
+		],
+		"description": "picture"
+	  }
+	}
