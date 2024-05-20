@@ -215,10 +215,6 @@ img {
   }
 }
 
-.address {
-  font-style: normal;
-}
-
 .contacts {
   display: flex;
   flex-direction: column;
